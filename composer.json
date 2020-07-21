@@ -1,0 +1,56 @@
+{
+  "name": "entwurfhaus/package",
+  "authors": [
+    {
+      "name": "Brian Ng",
+      "email": "brianngchongeu@gmail.com",
+      "homepage": "https://entwurfhaus.com"
+    }
+  ],
+  "license": "MIT",
+  "type": "library",
+  "description": "A PHP Composer package boilerplate, with Illuminate",
+  "keywords": [
+    "illuminate",
+    "composer",
+    "boilerplate",
+    "package"
+  ],
+  "autoload": {
+    "psr-4": {
+      "entwurfhaus\\package\\": "src/"
+    },
+    "classmap": [
+      "commands"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\Unit\\": "tests/Unit/",
+      "Tests\\Feature\\": "tests/Feature/"
+    },
+    "classmap": [
+      "commands"
+    ]
+  },
+  "require": {
+    "php": "^7.4",
+    "illuminate/database": "^7.0",
+    "illuminate/filesystem": "^7.0",
+    "illuminate/console": "^7.0",
+    "illuminate/events": "^7.0",
+    "illuminate/config": "^7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.2"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "scripts": {
+    "test": [
+      "phpunit tests"
+    ]
+  }
+}
