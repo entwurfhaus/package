@@ -14,8 +14,6 @@ class WelcomeTest extends TestCase {
         $welcome = new Welcome("Hello World");
 
         $this->assertNotEmpty($welcome->getMessage(), "There is no welcome message.");
-
-        $this->assertEmpty($welcome->getMessage(), "There is a welcome message.");
     }
 
     /**
